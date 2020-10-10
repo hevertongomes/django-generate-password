@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generate</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        .listCheckbox{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 40px;
+        }
+        .myForm{
+            display: block;
+            justify-content: space-between;
+            font-family: Roboto;
+            font-size: 18px;
+        }
+        .bt-concluir{
+            margin: 10px 142px;
+        }
+        .card-principal{
+            margin: 0 auto;
+        }
+        .content{
+            margin: 100px;
+        }
+        .title{
+            font-size: 18px;
+            font: bold;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="content">
+       <div class="card text-white bg-info mx-auto card-principal" style="max-width: 500px; height: 300px; margin: 10 auto;">
+            <div class="card-header title">Generate Password</div>
+            <div class="card-body">
+                
+                <div class="myForm">
+                <form action="{% url 'password' %}">
+                    <select  class="form-control" name="length" style="width: 15rem; margin: 0 auto;">
+                        <option value="6">6 char long</option>
+                        <option value="7">7 char long</option>
+                        <option value="8">8 char long</option>
+                        <option value="9">9 char long</option>
+                        <option value="10">10 char long</option>
+                        <option value="11">11 char long</option>
+                        <option value="12" selected>12 char long</option>
+                        <option value="13">13 char long</option>
+                        <option value="14">14 char long</option>
+                    </select>
+
+                    <div class="listCheckbox">
+                        <div class="form-check">
+                        <input type="checkbox"  class="form-check-input position-static"  name="uppercase"> Uppercase
+                        </div>
+
+                        <div class="form-check">
+                        <input type="checkbox"  class="form-check-input position-static"  name="numbers"> Numbers
+                        </div>
+
+                        <div class="form-check">
+                        <input type="checkbox"  class="form-check-input position-static"  name="special"> Special Charcters
+                        </div>
+                    </div>
+                    <input type="submit" value="Generate Password" class="btn btn-success bt-concluir">
+                </form>
+                </div>
+                </div>
+            </div>
+        </div>'
+    </div>
+</body>
+</html>
