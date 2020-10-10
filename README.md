@@ -1,16 +1,18 @@
 # Django Project Password Generate
 
-## Como usar?
+## Como usar
 
-Configure o ambiente do projeto com [virtualenv](https://virtualenv.pypa.io) and [pip](https://pip.pypa.io).
+Clonar no repositório: <https://github.com/hevertongomes/django-generate-password.git>
+
+Configure o ambiente do projeto com [virtualenv](https://virtualenv.pypa.io) e [pip](https://pip.pypa.io).
 
 ```bash
 $ virtualenv project-env
 $ source project-env/bin/activate
 $ pip install -r requeriments.txt
 
-# You may want to change the name `projectname`.
-$ cd projectname/
+# Para rodar o projeto.
+$ cd django-generate-password/
 $ python manage.py migrate
 $ python manage.py runserver
 
