@@ -20,4 +20,4 @@ $ python manage.py runserver
 ## Sobre o projeto
 
 Um projeto básico usando Django 3. Utilizando o conceito de rotas e o padrão de templates
-para criar um app que gerar senhar aleatórios para seu usuário
+para criar um app que gerar senhas aleatórias para seus usuários.
